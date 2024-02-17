@@ -22,3 +22,4 @@ Comandos que se deben memorizar en ubuntu
 'ls *[.txt]' : lista ese tipo de archivos
 'nano' : para editar un archivo de texto
 'git push origin master' : publicar un repositorio
+'cat' concatena dos archivos
