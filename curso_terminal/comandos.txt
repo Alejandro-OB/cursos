@@ -1,0 +1,24 @@
+Comandos que se deben memorizar en ubuntu
+'pwd' : imprime la ruta en que te encuentras
+'cd' : cambiar directorio
+'ls' : lista los archivos
+'ls -a' : lista archivos incluso ocultos
+'ls -S' : lista los archivos ordenados de mayor a menor
+'ls -lh' : lista los archivos en un formato entendible para el humano
+'code .' : abre la carpeta en la que te encuentres en vsc
+'mkdir' : para crear un directorio o carpeta
+'touch' : para crear un archivo
+'file' : muestra las caraterísticas de un archivo
+'cp' : copia un archivo
+'cp -r' : copia una carpeta
+'mv' : renombra o mueve una carpeta o archivo
+'rm' : elimina un archivo
+'rm -r': elimina una carpeta y su contenido, esto puede ser interactivo
+'tar -czvf' : comprime esa carpeta
+'tar -xzvf' : descomprime la carpeta
+'less' : abre un archivo de texto
+'find' busca una carpeta o archivo
+'ls palabra*' : lista los archivos que empiecen por esa palabra
+'ls *[.txt]' : lista ese tipo de archivos
+'nano' : para editar un archivo de texto
+'git push origin master' : publicar un repositorio

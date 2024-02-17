@@ -1,0 +1,4 @@
+Los comandos son una sintrucción que se da a la computadora para que realice alguna acción
+
+Las wildcards permiten detectar un archivo o archivos segun un patron
+
