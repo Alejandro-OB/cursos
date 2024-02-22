@@ -29,16 +29,20 @@ Para ejecutar comandos uno detras de otro se hace mediante ; por ejemplo ls; mkd
 Para ejecutar asincronamente se hace mediante el &
 
 Se puede utilizar comados condicionales con && por ejemplo mkdir directorio && cd directorio
-
 También existe el operador || que solo verifica que se cumpla una de las opciones
-***************************************************************************************************************
-Para modificar permisos se hace mediante el comando chmod para esto se agregan o quitan permisos al grupo (g), 
-usuario (u) y otros (o) y se usa + o - r para lectura w para escritura
-
-Para cambiar de usuario se puede usar su root esto nos cambiara al usuario root
-
-************************************************************************************************************* 
-Para crear variables de entorno se hace editando el archivo .bashrc
 
 
+
+
+
+1. se crea un repositorio se hace mediante git init
+2. se observa el estado del repositorio con git status
+3. se añade los archivos que faltan con git add .
+4. se realiza un commit con git commit -m y se añade un mensaje
+5. si te pide autenticarte se hace mediante git config -- global user.name username
+6. lugo git config --global user.email email
+7. se debe dirigirse a mis repositorios de github y crear uno nuevo
+8. se copia el quick setup en ssh
+9. se escribe git remote add origin y se pega el quick setup que se copio
+10. luego se escribe git push origin master 
 
