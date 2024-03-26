@@ -23,3 +23,4 @@ Comandos que se deben memorizar en ubuntu
 'nano' : para editar un archivo de texto
 'git push origin master' : publicar un repositorio
 'cat' concatena dos archivos
+'ifconfig' muestra infirmación de nuestra red

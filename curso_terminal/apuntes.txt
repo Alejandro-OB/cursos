@@ -1,4 +1,4 @@
-Los comandos son una sintrucción que se da a la computadora para que realice alguna acción
+Los comandos son una instrucción que se da a la computadora para que realice alguna acción
 
 Las wildcards permiten detectar un archivo o archivos segun un patron por ejemplo:
 
@@ -39,6 +39,21 @@ Para cambiar de usuario se puede usar su root esto nos cambiara al usuario root
 
 ************************************************************************************************************* 
 Para crear variables de entorno se hace editando el archivo .bashrc
+
+************************************************************************************************************
+Comandos de busqueda.
+
+con which se puede encontrar el directorio donde se encuentra un archivo después de escribir which se escribe el
+nombre del programa, este comando se puede usar para encontrar los binarios dentro de nuestro sistema
+
+otro comando imprtantes y muy útil para realizar busquedas es find al cual se le agrega la por ejemplo, al escribir
+find ./ -type d -name Documents va a buscar en la ruta establecida los archivos que sean directorios con nombre "Documents"
+
+el comando grep es también muy usado para busqueda, pero este espcialmente puede ayudar a comparar datos en un archivo, 
+por ejemplo podemos buscar las frases que contengan una palabra dentro de un archivo
+
+grep Towers movies.csv busca las películas que tengan la palabra Towers dentro del csv
+ 
 
 
 
