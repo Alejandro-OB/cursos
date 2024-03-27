@@ -24,3 +24,19 @@ ver una versión anterior
     Si se quiere obtener la versión del master o la actual se debe cambiar el identidicador del commit
     por master git chekout master historia.txt
 
+Crear una nueva rama
+    se puede crear una rama para agregar cambios sin afectar el commit actual, esto se hace así:
+    git branch NOMBRE_RAMA por ejemplor git branch cabecera. Esto creará una nueva rama la cual se
+    llamará cabecera.
+
+Moverse a la nueva rama
+    Una vez creada la nueva rama necesito moverme a esta desde la rama master para empezar a 
+    modificarla. Esto se realiza así: git checkout NOMBRE_RAMA ejemplo git checkout cabecera.
+    De esta manera nos movemos de la rama master a la rama cabecera.
+
+Fusionar dos ramas
+    En algunas ocaciones se debe fusionar dos ramas para tener los cambios que re han realizado en estas en 
+    nuestra rama principal, para esto se realiza un merge así:
+    git merge NOMBRE_RAMA por ejemplo git merge cabecera
+
+
