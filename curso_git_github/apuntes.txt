@@ -1,27 +1,11 @@
-Creaciónd de repositorio.
+Para crear un repositorio nuevo se hace mediante git init
+para volver en el tiempo a una versión anterior se puede hacer mediante reset
+Existen dos versiones de reset, una suave y una dura. 
+En la primera se usa git reset 016f19cc8eef003752f1f11de86e1907daf228c6 --soft
+la anterior línea de código trae nuevamente los datos de la versión anterior del 
+repsitorio pero sin modificar el staging.
 
-    Para crear un repositorio nuevo se hace mediante git init
-
-Gitreset
-
-    para volver en el tiempo a una versión anterior se puede hacer mediante reset
-    Existen dos versiones de reset, una suave y una dura. 
-    En la primera se usa git reset 016f19cc8eef003752f1f11de86e1907daf228c6 --soft
-    la anterior línea de código trae nuevamente los datos de la versión anterior del 
-    repsitorio pero sin modificar el staging.
-
-    La versión hard se usa de la siguiente manera.
-    git reset 016f19cc8eef003752f1f11de86e1907daf228c6 --hard.
-    esa linea de código lo que hace es traer la versión anterior del repsitorio pero
-    modificando todo.
-
-ver una versión anterior
-    
-    Para ver una versión anterior o un commit anterior puedo usar chekout de la siguiente manera
-    git chekout IDENTIFICADOR_DEL_COMMIT ARCHIVO_QUE_QUIERO_TRAER
-    git chekout 016f19cc8eef003752f1f11de86e1907daf228c6 historia.txt
-
-    Si se quiere obtener la versión del master o la actual se debe cambiar el identidicador del commit
-    por master git chekout master historia.txt
-
-NUEVA VERSIÓN 
+La versión hard se usa de la siguiente manera.
+git reset 016f19cc8eef003752f1f11de86e1907daf228c6 --hard.
+esa linea de código lo que hace es traer la versión anterior del repsitorio pero
+modificando todo.
