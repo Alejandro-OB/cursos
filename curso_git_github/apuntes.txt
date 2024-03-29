@@ -60,7 +60,18 @@ Agregar una llave SSH a git hub
 Crear o Clonar un repositorio con ssh
     Si queremos tener un repositorio remoto primero debemos crearlo en github, posteriormente copiamos la url ssh y usando el
     comando git remote add origin URL-SSH-REPOSITORIO ya hemos creado el repositorio remoto, ahora solo falta realizar el git push origin main 
-    
+    no sin antes haber hecho git pull origin main
+
+creación de tags
+    los tags son etiquetas que nos sirven para identificar nuestro proyecto ya sean versiones o demás. Para crear un tag se hace
+    con el comando git tag -a NOMBRE-TAG -m "MENSAJE DEL COMMIT" HASH-TAG por ejemplo:
+    git tag -a v0.1 -m "Primera versiónd de mi blog" a16b7a6.
+    Luego se puede ver los tags asociados o creados con el comando git tag.
+    para mirar hacia donde estan asociados los tags podemos usar el comando git show-ref --tags
+    posterior a crear un tag se debe publicarlo con git push origin --tags
+    Si por alguna razón queremos eliminar un tag se puede hacer con git tag -d  NOMBRE_TAG posteriormente publicarlo, pero esto no es todo
+    para que no siga siendo visible en github se debe usar el comando git push origin :refs/tags/NOMBRE_TAG
+
 
 
 
