@@ -57,5 +57,10 @@ Agregar una llave SSH a git hub
     Este es un paso muy simple y solo vasta con entrar a nuestra cuenta de git hub y en el apartado ssh de la configuración
     creamos una nueva llave ssh y pegamos nuestra llave ssh pública
 
+Crear o Clonar un repositorio con ssh
+    Si queremos tener un repositorio remoto primero debemos crearlo en github, posteriormente copiamos la url ssh y usando el
+    comando git remote add origin URL-SSH-REPOSITORIO ya hemos creado el repositorio remoto, ahora solo falta realizar el git push origin main 
+    
+
 
 
