@@ -37,7 +37,7 @@ Moverse a la nueva rama
 Fusionar dos ramas
     En algunas ocaciones se debe fusionar dos ramas para tener los cambios que re han realizado en estas en 
     nuestra rama principal, para esto se realiza un merge así:
-    git merge NOMBRE_RAMA por ejemplo git merge cabecera
+    git merge NOMBRE_RAMA por ejemplo git merge cabecera, luego de fusionar las ramas se debe hacer push 
 
 Crear una llave SSH
     Una llave SSH es aquella que nos permite conectarnos a un repositorio de git hub de manera segura creando una 
