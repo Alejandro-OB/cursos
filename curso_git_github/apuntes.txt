@@ -39,4 +39,23 @@ Fusionar dos ramas
     nuestra rama principal, para esto se realiza un merge así:
     git merge NOMBRE_RAMA por ejemplo git merge cabecera
 
+Crear una llave SSH
+    Una llave SSH es aquella que nos permite conectarnos a un repositorio de git hub de manera segura creando una 
+    llave pública y una privada. Para crear una llave SSH se debe escribir el comando ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+    posteriormente se debe presionar enter para aceptar la ubicación donde se va a crear la llave y agregar una passfrase 
+    y listo ya tenemos nuestra llave SSH
+
+Comprobrar una llave SSH
+    Para comprobar que se ha agregado una llave ssh correctamente se puede usar el comando eval $(ssh-agent -s) el cual mostrará
+    si se está ejecutando el proceso y con que código lo está haciendo.   
+
+Agregar una llave SSH localmente
+    No es sufuciente con crear la llave SSH se debe también agregarla a nuestro repositorio, para esto se usa el código 
+    ssh-add ~/.ssh/id_rsa
+
+Agregar una llave SSH a git hub
+    Este es un paso muy simple y solo vasta con entrar a nuestra cuenta de git hub y en el apartado ssh de la configuración
+    creamos una nueva llave ssh y pegamos nuestra llave ssh pública
+
+
 
