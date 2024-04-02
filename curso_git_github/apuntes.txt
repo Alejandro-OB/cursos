@@ -45,6 +45,11 @@ Crear una llave SSH
     posteriormente se debe presionar enter para aceptar la ubicación donde se va a crear la llave y agregar una passfrase 
     y listo ya tenemos nuestra llave SSH
 
+Editar passphrase de una llave SSH
+    Sí por algún motivo se desea cambiar una passphrase de una llave SSH se puede hacer mediante
+    ssh-keygen -p -f RUTA_LLAVE ejemplo ssh-keygen -p -f ~/.ssh/id_ed25519
+
+
 Comprobrar una llave SSH
     Para comprobar que se ha agregado una llave ssh correctamente se puede usar el comando eval $(ssh-agent -s) el cual mostrará
     si se está ejecutando el proceso y con que código lo está haciendo.   
@@ -60,7 +65,8 @@ Agregar una llave SSH a git hub
 Crear o Clonar un repositorio con ssh
     Si queremos tener un repositorio remoto primero debemos crearlo en github, posteriormente copiamos la url ssh y usando el
     comando git remote add origin URL-SSH-REPOSITORIO ya hemos creado el repositorio remoto, ahora solo falta realizar el git push origin main 
-    no sin antes haber hecho git pull origin main
+    no sin antes haber hecho git pull origin main.
+    También se puede clonar el repsitorio mediante git clone URL_O_SSH_REPOSITORIO
 
 creación de tags
     los tags son etiquetas que nos sirven para identificar nuestro proyecto ya sean versiones o demás. Para crear un tag se hace
@@ -69,8 +75,20 @@ creación de tags
     Luego se puede ver los tags asociados o creados con el comando git tag.
     para mirar hacia donde estan asociados los tags podemos usar el comando git show-ref --tags
     posterior a crear un tag se debe publicarlo con git push origin --tags
-    Si por alguna razón queremos eliminar un tag se puede hacer con git tag -d  NOMBRE_TAG posteriormente publicarlo, pero esto no es todo
-    para que no siga siendo visible en github se debe usar el comando git push origin :refs/tags/NOMBRE_TAG
+    Si por alguna razón queremos eliminar un tag se puede hacer con git tag -d  NOMBRE_TAG
+    posteriormente publicarlo, pero esto no es todo
+    para que no siga siendo visible en github se debe usar el comando:
+    git push origin :refs/tags/NOMBRE_TAG
+
+Pull Request
+    Es una solictud la cual me permite revisar los cambios que se han hecho a otras ramas
+    antes de fusionarlas con mi rama principal, esto se puede hacer desde la interfaz de github
+
+Fork 
+    Se clona el estado actual del repositorio. Se hace mediante el botón fork de github, luego se debe
+    clonar el repsitorio. Para hacer merge entre las dos versiones se debe hacer un pull request
+
+
 
 
 
