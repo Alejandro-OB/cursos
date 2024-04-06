@@ -1,81 +1,80 @@
-Creaciónd de repositorio.
+Creaciond de repositorio.
 
     Para crear un repositorio nuevo se hace mediante git init
 
 Gitreset
 
-    para volver en el tiempo a una versión anterior se puede hacer mediante reset
+    para volver en el tiempo a una version anterior se puede hacer mediante reset
     Existen dos versiones de reset, una suave y una dura. 
     En la primera se usa git reset 016f19cc8eef003752f1f11de86e1907daf228c6 --soft
-    la anterior línea de código trae nuevamente los datos de la versión anterior del 
+    la anterior linea de codigo trae nuevamente los datos de la version anterior del 
     repsitorio pero sin modificar el staging.
 
-    La versión hard se usa de la siguiente manera.
+    La version hard se usa de la siguiente manera.
     git reset 016f19cc8eef003752f1f11de86e1907daf228c6 --hard.
-    esa linea de código lo que hace es traer la versión anterior del repsitorio pero
+    esa linea de codigo lo que hace es traer la version anterior del repsitorio pero
     modificando todo.
 
-ver una versión anterior
+ver una version anterior
     
-    Para ver una versión anterior o un commit anterior puedo usar chekout de la siguiente manera
+    Para ver una version anterior o un commit anterior puedo usar chekout de la siguiente manera
     git chekout IDENTIFICADOR_DEL_COMMIT ARCHIVO_QUE_QUIERO_TRAER
     git chekout 016f19cc8eef003752f1f11de86e1907daf228c6 historia.txt
 
-    Si se quiere obtener la versión del master o la actual se debe cambiar el identidicador del commit
+    Si se quiere obtener la version del master o la actual se debe cambiar el identidicador del commit
     por master git chekout master historia.txt
 
 Crear una nueva rama
-    se puede crear una rama para agregar cambios sin afectar el commit actual, esto se hace así:
-    git branch NOMBRE_RAMA por ejemplor git branch cabecera. Esto creará una nueva rama la cual se
-    llamará cabecera.
+    se puede crear una rama para agregar cambios sin afectar el commit actual, esto se hace asi:
+    git branch NOMBRE_RAMA por ejemplor git branch cabecera. Esto creara una nueva rama la cual se
+    llamara cabecera.
 
 Moverse a la nueva rama
     Una vez creada la nueva rama necesito moverme a esta desde la rama master para empezar a 
-    modificarla. Esto se realiza así: git checkout NOMBRE_RAMA ejemplo git checkout cabecera.
+    modificarla. Esto se realiza asi: git checkout NOMBRE_RAMA ejemplo git checkout cabecera.
     De esta manera nos movemos de la rama master a la rama cabecera.
 
 Fusionar dos ramas
     En algunas ocaciones se debe fusionar dos ramas para tener los cambios que re han realizado en estas en 
-    nuestra rama principal, para esto se realiza un merge así:
+    nuestra rama principal, para esto se realiza un merge asi:
     git merge NOMBRE_RAMA por ejemplo git merge cabecera, luego de fusionar las ramas se debe hacer push 
 
 Crear una llave SSH
     Una llave SSH es aquella que nos permite conectarnos a un repositorio de git hub de manera segura creando una 
-    llave pública y una privada. Para crear una llave SSH se debe escribir el comando ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
-    posteriormente se debe presionar enter para aceptar la ubicación donde se va a crear la llave y agregar una passfrase 
+    llave publica y una privada. Para crear una llave SSH se debe escribir el comando ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+    posteriormente se debe presionar enter para aceptar la ubicacion donde se va a crear la llave y agregar una passfrase 
     y listo ya tenemos nuestra llave SSH
 
 Editar passphrase de una llave SSH
-    Sí por algún motivo se desea cambiar una passphrase de una llave SSH se puede hacer mediante
+    Si por algun motivo se desea cambiar una passphrase de una llave SSH se puede hacer mediante
     ssh-keygen -p -f RUTA_LLAVE ejemplo ssh-keygen -p -f ~/.ssh/id_ed25519
 
-
 Comprobrar una llave SSH
-    Para comprobar que se ha agregado una llave ssh correctamente se puede usar el comando eval $(ssh-agent -s) el cual mostrará
-    si se está ejecutando el proceso y con que código lo está haciendo.   
+    Para comprobar que se ha agregado una llave ssh correctamente se puede usar el comando eval $(ssh-agent -s) el cual mostrara
+    si se esta ejecutando el proceso y con que codigo lo esta haciendo.   
 
 Agregar una llave SSH localmente
-    No es sufuciente con crear la llave SSH se debe también agregarla a nuestro repositorio, para esto se usa el código 
+    No es sufuciente con crear la llave SSH se debe tambien agregarla a nuestro repositorio, para esto se usa el codigo 
     ssh-add ~/.ssh/id_rsa
 
 Agregar una llave SSH a git hub
-    Este es un paso muy simple y solo vasta con entrar a nuestra cuenta de git hub y en el apartado ssh de la configuración
-    creamos una nueva llave ssh y pegamos nuestra llave ssh pública
+    Este es un paso muy simple y solo vasta con entrar a nuestra cuenta de git hub y en el apartado ssh de la configuracion
+    creamos una nueva llave ssh y pegamos nuestra llave ssh publica
 
 Crear o Clonar un repositorio con ssh
     Si queremos tener un repositorio remoto primero debemos crearlo en github, posteriormente copiamos la url ssh y usando el
     comando git remote add origin URL-SSH-REPOSITORIO ya hemos creado el repositorio remoto, ahora solo falta realizar el git push origin main 
     no sin antes haber hecho git pull origin main.
-    También se puede clonar el repsitorio mediante git clone URL_O_SSH_REPOSITORIO
+    Tambien se puede clonar el repsitorio mediante git clone URL_O_SSH_REPOSITORIO
 
-creación de tags
-    los tags son etiquetas que nos sirven para identificar nuestro proyecto ya sean versiones o demás. Para crear un tag se hace
+creacion de tags
+    los tags son etiquetas que nos sirven para identificar nuestro proyecto ya sean versiones o demas. Para crear un tag se hace
     con el comando git tag -a NOMBRE-TAG -m "MENSAJE DEL COMMIT" HASH-TAG por ejemplo:
-    git tag -a v0.1 -m "Primera versiónd de mi blog" a16b7a6.
+    git tag -a v0.1 -m "Primera versiond de mi blog" a16b7a6.
     Luego se puede ver los tags asociados o creados con el comando git tag.
     para mirar hacia donde estan asociados los tags podemos usar el comando git show-ref --tags
     posterior a crear un tag se debe publicarlo con git push origin --tags
-    Si por alguna razón queremos eliminar un tag se puede hacer con git tag -d  NOMBRE_TAG
+    Si por alguna razon queremos eliminar un tag se puede hacer con git tag -d  NOMBRE_TAG
     posteriormente publicarlo, pero esto no es todo
     para que no siga siendo visible en github se debe usar el comando:
     git push origin :refs/tags/NOMBRE_TAG
@@ -85,8 +84,9 @@ Pull Request
     antes de fusionarlas con mi rama principal, esto se puede hacer desde la interfaz de github
 
 Fork 
-    Se clona el estado actual del repositorio. Se hace mediante el botón fork de github, luego se debe
+    Se clona el estado actual del repositorio. Se hace mediante el boton fork de github, luego se debe
     clonar el repsitorio. Para hacer merge entre las dos versiones se debe hacer un pull request
+
 
 
 
