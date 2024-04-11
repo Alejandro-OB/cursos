@@ -8,7 +8,7 @@ Git reset
     Existen dos versiones de reset, una suave y una dura. 
     En la primera se usa git reset 016f19cc8eef003752f1f11de86e1907daf228c6 --soft
     la anterior linea de codigo trae nuevamente los datos de la version anterior del 
-    repsitorio pero sin modificar el staging.
+    repositorio pero sin modificar el staging.
 
     La version hard se usa de la siguiente manera.
     git reset 016f19cc8eef003752f1f11de86e1907daf228c6 --hard.
@@ -118,6 +118,12 @@ git reflog y git reset
 git commit --amend
     este comando es util para remendar commits es decir para añadir a un commit anterior algo nuevo y de esta manera no tener que hacer un 
     nuevo commit
+
+git grep 
+    En muchas ocasiones se va a necesitar buscar algo dentro de nuestro repositorio, ya sea cuantas veces escribimos una palabra
+    o donde esta esta palabra, esto es posible graciasa git grep. Si se desea buscar en que linea se escribio una palabra se puede 
+    digitar git grep -n PALABRA y si se desea contar las veces que se escribio esa palabra se puede usar git grep -c PALABRA
+    eso solo buscara en los archivos del repositorio. Si se desea buscar en los commits se debe usar git log -S "PALABRA"
 
 
 
