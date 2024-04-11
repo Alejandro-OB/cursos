@@ -2,7 +2,7 @@ Creaciond de repositorio.
 
     Para crear un repositorio nuevo se hace mediante git init
 
-Gitreset
+Git reset
 
     para volver en el tiempo a una version anterior se puede hacer mediante reset
     Existen dos versiones de reset, una suave y una dura. 
@@ -107,9 +107,17 @@ git clean
 
 git cherry-pick 
     este comando se usa para traer un commit a la rama master, se puede usar si deseamos traer un cambio en especifico y no todos los cambios
-    que hayamos hecho en la otra rama y se usa asi: git cherry-up HASH_COMMIT 
-    
+    que hayamos hecho en la otra rama y se usa asi: git cherry-up HASH_COMMIT
 
+git reflog y git reset
+    git reflog funciona de igual forma que git log ya que nos muestra la historia de nuestro proyecto y todos, absolutamente todos los 
+    commits que hemos hecho hallan sido de errores o no, podemos obseravar los commits de git reflog para ver un commit al que queramos
+    volver si rompimos completamente nuestro proyecto. Para volver a un estado anterior se debe usar git reset --hard HASH_COMMIT pero
+    los cambios que deseamos eliminar no van a desaparecer de git reflog.
+    
+git commit --amend
+    este comando es util para remendar commits es decir para añadir a un commit anterior algo nuevo y de esta manera no tener que hacer un 
+    nuevo commit
 
 
 
