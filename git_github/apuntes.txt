@@ -87,6 +87,28 @@ Fork
     Se clona el estado actual del repositorio. Se hace mediante el boton fork de github, luego se debe
     clonar el repsitorio. Para hacer merge entre las dos versiones se debe hacer un pull request
 
+git rebase
+    cuando tenemos una nueva rama y hacemos un merge no solo vamos a tener la rama antigua si no también la nueva rama 
+    pero si queremos que se modifique la hisotria de la rama principal como si no hubiera pasado nada se puede hacer usando
+    de git rebase, sin embargo, esto no es una buena práctica puesto que sobre escribe la hisotria de la rama principal.
+    Por esta razón solo es recomendable hacerlo en repositorios locales más no en repositorios remotos.
+    se debe hacer primero rebase a la rama que se desea modificar y luego a la rama que va a quedar
+
+git stash
+    este comando sirve para no publicar directamente los cambios hechos en el repositorio si no que los guarda para publicarlos después. 
+    con git stash los cambios vuelven al punto anterior de donde estaba antes de hacerlos. sirve para experimentar y volver a donde
+    estabamos 
+
+git clean 
+    este comando sirve para borrar archivos no deseados de nuiestro repositorio, por ejemplo cuando hay una copia de varios archivos
+    que no deseamos y queremos eliminarlos, para ejecutarlo primero debemos ingresar el comando git clean --dry--run para comprobar
+    los archivos que deseamos borrar y luego ingresar git clean -f y se borrará todo lo que hayamos establecido excepto las carpetas y
+    los archivos de .gitignore
+
+git cherry-pick 
+    este comando se usa para traer un commit a la rama master, se puede usar si deseamos traer un cambio en especifico y no todos los cambios
+    que hayamos hecho en la otra rama y se usa asi: git cherry-up HASH_COMMIT 
+    
 
 
 
