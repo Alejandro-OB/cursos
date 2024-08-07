@@ -1,0 +1,94 @@
+una forma de estilizar los elementos con css es usando los selectores,
+estos selectores pueden ser basicos o combinadores, entre los selectores basicos tenemos
+los selectores de clase, de tipo, de id, de atributo y el selector universal.
+
+selector de clase:
+    .clase{...}
+selector de tipo:
+    div{...}
+selector de id:
+    #id{...}
+selector de atributo:
+    a[href="..."]{...}
+selector universal:
+    *{...}
+
+Existen cuatro selectores combinadores que son:
+
+selectores descendientes:
+    div p
+selector hijo directo:
+    div > p
+selector elemento adyacente:
+    div + p
+selector general de hermanos:
+    div ~ p
+
+cascada y especificidad
+    La cascada es el proceso mediante el cual el navegador determina que estilo se debe
+    aplicar a un elemento cuando hay muchas reglas que lo pueden afectar.
+    y la especificidad hace referencia a que tan especificas son las reglas css, en cuanto 
+    mayor especifico sea un selector, mayor prioridad tendrá.
+
+Tipos de displays:
+
+    block: Ocupan toda la pantalla y se puede agregar margenes y modificar su tamaño,
+    no se pueden agregar en paralelo si no uno encima de otro y el tamaño no es necesariamente
+    el mismo del contenido. Un ejemplo de estos son los div.
+
+    inline: Estos tienen el mismo tamaño de su contenido y este no es modificable, solo se puede 
+    agregar los margenes superiores e inferiores y no tiene las mismas modificaciones que un 
+    block pero si se pueden agregar uno a lado del otro.
+
+    block-inline: es una combinación de los anteriores, por ejemplo, los botones.
+
+    flexbox:
+
+Posicionamiento en css:
+    El posicionamiento en CSS consiste en cómo un elemento se situará, con respecto a su elemento padre y al flujo normal del documento.
+    El flujo normal del documento es el orden de los elementos establecidos en el HTML.
+
+z-index:
+    Si un elemento tiene un z-index mayor a otro, estará por delante.
+    Sin embargo, si un elemento que tiene un z-index menor a otros, sus hijos nunca estarán por encima,
+    aunque su z-index sea mayor.
+
+Propiedades de CSS mas usadas:
+
+    Layout:
+        Display
+    Modelo de caja: 
+        Margin
+        Padding
+        Border
+    Tamaños:
+        width
+        Height
+    Colores de fondo:
+        Background
+        Background-Color
+    Textos:
+        font-size: Establece un tamaño de fuente
+        font-weight: establece el resaltado del texto, con valores de 100 a 900 en intervalos de 100
+        font-family: establece el tipo de la fuente
+        text-align: establece la posición del texto: right, left, center y justify
+        color: establece el color del texto
+
+Unidades de medida:
+    Es la longitud que toman ciertos elementos y existen dos medidas que son las absolutas y 
+    las relativas.
+    Los valores absolutos son fijos y no dependen de nada, su valor no va a cambiar y la 
+    más usada son los pixeles (px).
+    Las medidas relativas son variables y la medida depende de un valor externo.
+
+Diseño responsivo:
+    "Que tu sitio se vea bien en cualquier pantalla"
+    se hace con la etiqueta @media
+
+Arquitecturas de css:
+    Las arquitecturas CSS consisten en manejar el código CSS con una serie de reglas
+    y patrones para facilitar su lectura, mantenibilidad y escabilidad.
+
+
+    
+    
